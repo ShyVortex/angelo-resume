@@ -1,0 +1,33 @@
+# Output PDF
+*.pdf
+*.dvi
+*.ps
+
+# Auxiliary files
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.out
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+
+# Temporary or backup files
+*~
+*.bak
+*.backup
+*.swp
+*.tmp
+
+# Latexmk and other build directories
+_build/
+latexmkrc
+Preview/
