@@ -15,22 +15,30 @@
 
 % -------------------- HEADING --------------------
 \begin{flushright}
-  \begin{tikzpicture}
+  %\begin{tikzpicture}
     % cerchio esterno (bordo nero)
-	\draw[line width=2pt, black] (0,0) circle (1.50cm); 
+	%\draw[line width=2pt, black] (0,0) circle (1.50cm); 
 	
 	% cerchio interno con foto
-	\clip (0,0) circle (1.5cm);
-	\node at (0,0) {\includegraphics[width=3cm]{Figs/pic.jpg}};
-  \end{tikzpicture}
+	%\clip (0,0) circle (1.5cm);
+	%\node at (0,0) {\includegraphics[width=3cm]{Figs/pic.jpg}};
+  %\end{tikzpicture}
 \end{flushright}\vspace{-45pt}
 
 \begin{flushleft}  % Rplace here with your name (and identity if required)
   {\Calluna \fontsize{27pt}{27pt}\selectfont \textsc{Angelo Trotta}}
-  \quad {\Calluna \fontsize{14.5pt}{14.5pt}\selectfont \hspace{1.85cm} \textsc{Resume}}
+  \quad {\Calluna \fontsize{14.5pt}{14.5pt}\selectfont
+  	\hfill \textsc{Resume}}
   \hspace{0.2cm} \fontsize{10pt}{10pt}{(October 2025)}
   \noindent\rule{\textwidth}{0.4pt}
 \end{flushleft}
+
+% -------------------- BIO --------------------
+\sectionBlock{
+	\section{Bio}
+}{
+	\Calluna Computer Science graduate passionate about harnessing technology to improve lives. I’m particularly interested in the intersection of computer science and healthcare, where data-driven innovation and intelligent systems can make a real difference in patient outcomes and medical research. Curious, motivated, and detail-oriented, I enjoy exploring new technologies and developing practical solutions that bridge the gap between people and technology.
+}
 
 % -------------------- CONTACTS --------------------
 \sectionBlock{
@@ -56,8 +64,7 @@
 }{
 	\setstretch{0.6}
 	\skillListStart
-		\item \textit{Name: } {Angelo}
-		\item \textit{Last Name: } {Trotta}
+		\item \textit{Birthdate: } {05/10/2002}
 		\item \textit{Citizenship: } {Italian}
 		\item \textit{Languages: } {Italian and English}
 	\skillListEnd
