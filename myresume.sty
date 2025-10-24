@@ -22,6 +22,8 @@
 \usepackage{graphicx}
 \usepackage{tikz}
 \usepackage{hyperref}
+\usepackage{xifthen}
+\usepackage{changepage}
 
 % Font style
 \usepackage{fontspec}
@@ -48,30 +50,49 @@
     Extension = .ttf,
     UprightFont=*-Regular
     ]
+\newfontfamily\CronosSbd{CronosProLT}[
+	Path=./Fonts/Cronos/,
+	Extension = .ttf,
+	UprightFont=*-Semibold
+]
+\newfontfamily\CronosBd{CronosProLT}[
+	Path=./Fonts/Cronos/,
+	Extension = .ttf,
+	UprightFont=*-Bold
+]
+\newfontfamily\CronosCn{CronosProLT}[
+	Path=./Fonts/Cronos/,
+	Extension = .ttf,
+	UprightFont=*-Caption
+]
+\newfontfamily\CronosDs{CronosProLT}[
+	Path=./Fonts/Cronos/,
+	Extension = .ttf,
+	UprightFont=*-Display
+]
 
 % Emph style
 \renewcommand{\emph}[1]{\textbf{\fontsize{11pt}{11pt}\selectfont #1}}
 
 % Section block
 \newcommand{\sectionBlock}[2]{%
-    \noindent
-    \begin{minipage}[t]{2.7cm} % Title
-    \raggedright
-    #1
-    \end{minipage}
-    \hfill
-    \begin{minipage}[t]{13.85cm} % Content
-    \raggedright
-    #2
-    \end{minipage}
-    \vspace{25pt}
+	\begingroup
+	\par\noindent
+	{\raggedright #1\par}%
+	\vspace{0.5em}
+	\begin{adjustwidth}{2.7cm}{}
+		\raggedright
+		#2
+	\end{adjustwidth}
+	\vspace{25pt}
+	\endgroup
 }
 
 % Section title
 \titleformat{\section}{
   \setstretch{1.0}
-  \CronosLt\scshape\raggedright
-  \fontsize{14.5pt}{14.5pt}\selectfont 
+  \Calluna\scshape\raggedright
+  \fontsize{14.5pt}{14.5pt}\selectfont
 }{}{0em}{}
 
 % Section content
@@ -106,12 +127,15 @@
     \end{tabular}\vspace{-7pt}
 }
 
-% Internship information
-\newcommand{\internHeading}[3]{
-  \renewcommand{\arraystretch}{1.2}
-    \begin{tabular}[t]{p{13.74cm}}
-      \emph{#1} $|$ #2 \hfill #3 \\
-    \end{tabular}\vspace{-7pt}
+% Internship information with role
+\newcommand{\internHeading}[5]{
+	\renewcommand{\arraystretch}{1.2}
+	\vspace{0.75em}
+	\begin{tabular}[t]{p{13.74cm}}
+		{\fontsize{13.5pt}{13.5pt}\selectfont\textbf{#1}} \\[3pt]
+		\emph{#2} $|$ #3 \hfill #4 \vspace{0.75em}
+		\ifthenelse{\isempty{#5}}{}{\\[-2pt]{\textit{#5}}}%
+	\end{tabular}\vspace{-2.5pt}
 }
 
 % Project information
