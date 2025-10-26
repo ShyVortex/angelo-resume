@@ -1,8 +1,8 @@
 %-------------------------------------
-% Resum in LaTeX (XeLaTeX)
-% Author:  HF Yuan
-% Project: https://github.com/xyz-yuanhf/yuan-resume
-% Base on: https://github.com/mattyHerzig/mattys_resume
+% Resume in LaTeX (LuaLaTeX)
+% Author:  ShyVortex
+% Project: https://github.com/ShyVortex/angelo-resume
+% Based on: https://github.com/Xyz-yuanhf/yuan-resume
 %          http://www.jianxu.net/en/
 % License: MIT
 %------------------------------------
@@ -71,7 +71,7 @@
 	\skillListEnd
 }
 
-% ------------------ PROFESSIONAL EXPERIENCE ------------------
+% ---------------- PROFESSIONAL EXPERIENCE ----------------
 \sectionBlock{
 	\section{Professional Experience}
 }{
@@ -125,6 +125,17 @@
 \eduHeading
   {M.Sc. in Software Systems Security}{2027 (expected)}
   {University of Molise, Pesche, Italy}{} \vspace{0.25em}
+  \nbItListStart \myItem{Exams taken so far:} \itemListEnd
+  \itemListStart
+  	\myItem{Advanced English}
+  	\myItem{Biometric Systems}
+  	\myItem{Computer Forensics and Investigations}
+  	\myItem{Security Governance}
+  	\myItem{Informatics and Law}
+  	\myItem{Computational Statistics and Machine Learning}
+  	\myItem{Software Project Management}
+  	\myItem{Software Security and Program Analysis}
+  \itemListEnd
 \vspace{0.5em}
 
 \eduHeading
@@ -136,18 +147,41 @@
   \myItem{Advisor: Prof. Simone Scalabrino}
   \myItem{Grade: 108/110}
 \itemListEnd
-}
+\nbItListStart \myItem{Exams taken:} \itemListEnd
+\itemListStart
+	\myItem{Logic and Foundations of Computer Science}
+	\myItem{Computer Architecture}
+	\myItem{Programming I}
+	\myItem{Operating Systems}
+	\myItem{Probability Calculus}
+	\myItem{English Language}
+	\myItem{Programming II}
+	\myItem{Mathematics I}
+	\myItem{Introduction to Machine Learning}
+	\myItem{Legal Informatics}
+	\myItem{Algorithms and Data Structures}
+	\myItem{Databases and Information Systems}
+	\myItem{Physics}
+	\myItem{Numerical Calculus}
+	\myItem{Mathematics II}
+	\myItem{Computer Networks}
+	\myItem{Operations Research}
+	\myItem{Automated Software Delivery}
+	\myItem{Artificial Intelligence}
+	\myItem{Hands on Unity}
+	\myItem{Mobile Programming}
+\itemListEnd \vspace{0.5em}
 
-% -------------------- PUBLICATIONS --------------------
-\sectionBlock{
-\section{Publications}
-}{
-\pubListStart
-\justifying
-\item \textbf{Xiao Yuan}, Hua Li. The Future Urban Transportation Systems: Innovations and Challenges. \textit{Journal of Operations Research and Optimization}, 2024.
-\item Hua Li, \textbf{Xiao Yuan}, John Doe. Optimizing Logistics and Supply Chain Networks Using Machine Learning Techniques. \textit{International Conference on Operations Research and Machine Learning}, 2023.
-\item John Doe, \textbf{Xiao Yuan}, Hua Li. Artificial Intelligence in Healthcare: Transforming Diagnostics and Treatment. \textit{International Conference on HealthTech Innovations}, 2023.
-\pubListEnd
+\eduHeading
+	{High School Diploma}{30 July 2021}
+	{Scientific Lyceum "Bonghi-Rosmini", Italy}{} \vspace{0.25em}
+\nbItListStart \myItem{Main subjects covered:} \itemListEnd
+\itemListStart
+	\myItem{Mathematics}
+	\myItem{Physics}
+	\myItem{Biology}
+	\myItem{Chemistry}
+\itemListEnd
 }
 
 % -------------------- PROJECTS --------------------
@@ -155,12 +189,31 @@
 \section{Projects}
 }{
 \projHeading
-{\textbf{Advanced Optimization Techniques for Smart Grid Management}}
-{National Natural Science Foundation of China (NSFC)} {2023.01 - 2024.01}
+{\fontsize{13pt}{13pt}\textbf{UniMove - Car Sharing for University Students}}
+{University of Molise, Pesche, Italy} {03/2025 - 09/2025}
+{In this project, I served as the \textbf{Lead Software Manager}.
+I delivered training sessions to students from the previous academic year who were responsible for developing the mobile application. The courses covered the fundamentals of CRUD operations, PostgreSQL, Java Spring for backend development, API testing with Postman, and the Ionic framework for frontend implementation.
+Additionally, in collaboration with the other managers, I coordinated task assignments following Agile methodologies, continuously monitored team progress, and provided structured feedback throughout all development phases to ensure an efficient and seamless workflow.}
+{}\vspace{0.5em}
 
 \projHeading
-{\textbf{Optimizing Urban Traffic Flow Using AI-Based Predictive Models}}
-{Smart Transportation Innovations Grant} {2021.12 - 2022.12}.
+{\fontsize{13pt}{13pt}\textbf{PlusOne - Simpler Healthcare Communication}}
+{University of Molise, Pesche, Italy} {04/2024 - 06/2024}
+{Developed a cross-platform mobile application using the Ionic framework to enhance communication among healthcare professionals in hospital and emergency settings. The app streamlines interactions between doctors, patients, and nurses, facilitating efficient information exchange and improving patient care coordination.}
+{}\vspace{0.5em}
+
+\projHeading
+{\fontsize{13pt}{13pt}\textbf{Diffusion Tool - AI Image Generator and Upscaler}}
+{University of Molise, Pesche, Italy} {12/2023 - 04/2024}
+{JavaFX desktop application integrating a Python backend that leverages Stable Diffusion pipelines, BSRGAN models, and custom upscaling algorithms. Designed for offline usage, the tool offers image generation, high-quality upscaling, and degradation modeling, all while maintaining user data locally.}
+{Project link: \url{https://github.com/ShyVortex/diffusion-tool}}
+\itemListStart
+	\myItem{Architected the GUI frontend with JavaFX and managed Python integration for AI workflows}
+	\myItem{Implemented user authentication flows (Login / Sign Up) and structured navigation to Home, Profile, Generate, and Upscale modules}
+	\myItem{Engineered the core Generate and Upscale views as frontends to Python scripts executing Stable Diffusion and BSRGAN models}
+	\myItem{Defined system requirements and dependency management (OpenJDK 17+, Maven, Python + virtual environment)}
+	\myItem{Packaged the project as a runnable .jar with automated build steps (Maven) for easy distribution}
+\itemListEnd
 }
 
 % -------------------- AWARDS & HONORS --------------------

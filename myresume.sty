@@ -1,8 +1,8 @@
 %-------------------------------------
-% Resum in LaTeX (XeLaTeX)
-% Author:  HF Yuan
-% Project: https://github.com/xyz-yuanhf/yuan-resume
-% Base on: https://github.com/mattyHerzig/mattys_resume
+% Resume in LaTeX (LuaLaTeX)
+% Author:  ShyVortex
+% Project: https://github.com/ShyVortex/angelo-resume
+% Based on: https://github.com/Xyz-yuanhf/yuan-resume
 %          http://www.jianxu.net/en/
 % License: MIT
 %------------------------------------
@@ -140,10 +140,13 @@
 }
 
 % Project information
-\newcommand{\projHeading}[3]{
+\newcommand{\projHeading}[5]{
   \renewcommand{\arraystretch}{1.2}
     \begin{tabular}[t]{p{13.74cm}}
       \textbf{#1} \hfill \\
-      \textit{#2} \hfill #3 \\
+      \textit{#2} \hfill #3 \vspace{0.75em}
+      \ifthenelse{\isempty{#4}}{}{\\[-2pt]{\textit{#4}}}
+      \ifthenelse{\isempty{#5}}{}{
+      	\parbox[t]{13.74cm}{#5}}
     \end{tabular}\vspace{2pt}
 }
