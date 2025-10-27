@@ -65,9 +65,9 @@
 }{
 	\setstretch{0.6}
 	\skillListStart
+		\item \textit{Gender: } {Male}\vspace{0.25em}
 		\item \textit{Birthdate: } {05/10/2002}\vspace{0.25em}
 		\item \textit{Citizenship: } {Italian}
-		\item \textit{Languages: } {Italian and English}
 	\skillListEnd
 }
 
@@ -120,7 +120,7 @@
 
 % -------------------- EDUCATION --------------------
 \sectionBlock{
-\section{Education}
+	\section{Education}
 }{
 \eduHeading
   {M.Sc. in Software Systems Security}{2027 (expected)}
@@ -142,7 +142,7 @@
   {B.Sc. in Computer Science}{24 October 2024}
   {University of Molise, Pesche, Italy}{} \vspace{0.25em}
 \nbItListStart
-  \myItem{Thesis title: \textit{A Fine-Grained Analysis of Comments Quality in Code-Related Datasets}}
+  \myItem{Thesis title: \href{https://github.com/ShyVortex/analyzer-paper/blob/main/Paper/thesis\_final.pdf}{\textit{A Fine-Grained Analysis of Comments Quality in Code-Related Datasets}}}
   \myItem{Research area: Automated Software Delivery}
   \myItem{Advisor: Prof. Simone Scalabrino}
   \myItem{Grade: 108/110}
@@ -186,7 +186,7 @@
 
 % -------------------- PROJECTS --------------------
 \sectionBlock{
-\section{Projects}
+	\section{Projects}
 }{
 \projHeading
 {\fontsize{13pt}{13pt}\textbf{UniMove - Car Sharing for University Students}}
@@ -194,13 +194,27 @@
 {In this project, I served as the \textbf{Lead Software Manager}.
 I delivered training sessions to students from the previous academic year who were responsible for developing the mobile application. The courses covered the fundamentals of CRUD operations, PostgreSQL, Java Spring for backend development, API testing with Postman, and the Ionic framework for frontend implementation.
 Additionally, in collaboration with the other managers, I coordinated task assignments following Agile methodologies, continuously monitored team progress, and provided structured feedback throughout all development phases to ensure an efficient and seamless workflow.}
-{}\vspace{0.5em}
+{}
+
+\projHeading
+{\fontsize{13pt}{13pt}\textbf{GameTracker - Library Manager}}
+{University of Molise, Pesche, Italy} {05/2024 - 07/2024}
+{A mobile app (Android and iOS) built with Flutter to allow users to track video games across multiple platforms.}
+{Project link: \url{https://github.com/ShyVortex/game-tracker}}
+\itemListStart
+	\myItem{Enables users to log their gaming library (platform, playtime, completion date, highlights) and manage wishlists, favorites, and completed titles.}
+	\myItem{Implemented user account creation and synchronization with a remote backend to preserve user data across devices.}
+	\myItem{Integrated location-based features leveraging OpenStreetMap to record where a game was completed (physical location).}
+	\myItem{Built settings menu including theme switching (light/dark mode) and profile customization.}
+	\myItem{Coordinated the development of both frontend (Flutter UI) and backend APIs to deliver a seamless, responsive experience across platforms.}
+\itemListEnd
+\vspace{0.65em}
 
 \projHeading
 {\fontsize{13pt}{13pt}\textbf{PlusOne - Simpler Healthcare Communication}}
 {University of Molise, Pesche, Italy} {04/2024 - 06/2024}
 {Developed a cross-platform mobile application using the Ionic framework to enhance communication among healthcare professionals in hospital and emergency settings. The app streamlines interactions between doctors, patients, and nurses, facilitating efficient information exchange and improving patient care coordination.}
-{}\vspace{0.5em}
+{Project link: \url{https://github.com/ShyVortex/plusone-ionic}}\vspace{0.65em}
 
 \projHeading
 {\fontsize{13pt}{13pt}\textbf{Diffusion Tool - AI Image Generator and Upscaler}}
@@ -214,19 +228,31 @@ Additionally, in collaboration with the other managers, I coordinated task assig
 	\myItem{Defined system requirements and dependency management (OpenJDK 17+, Maven, Python + virtual environment)}
 	\myItem{Packaged the project as a runnable .jar with automated build steps (Maven) for easy distribution}
 \itemListEnd
+\vspace{0.65em}
+
+\projHeading
+{\fontsize{13pt}{13pt}\textbf{Simplified Monopoly}}
+{University of Molise, Pesche, Italy} {08/2022 - 10/2023}
+{Java application converting a command-line version of Monopoly into a graphical interface using Swing / GUI Designer, without altering the core game logic.}
+{Project link: \url{https://github.com/ShyVortex/simplified-monopoly}}
+\itemListStart
+	\myItem{Designed and implemented the user interface using GUI Designer and JFormDesigner, including layout, controls, and game state views.}
+	\myItem{Managed project build and distribution using Maven and JDK 17.}
+	\myItem{Learned OOP principles intensively, refined code structure, and improved design patterns for maintainability in future projects.}
+\itemListEnd
 }
 
-% -------------------- AWARDS & HONORS --------------------
+% -------------------- ARTICLES --------------------
 \sectionBlock{
-\section{Awards\\and\\Honors}
+	\section{Articles}
 }{
-\awardListStart
-\justifying
-\item \emph{First Prize}, International Data Science Challenge \hfill 2023.11
-\item \emph{Best Innovation Award}, Tech Startup Pitch Competition \hfill 2023.05
-\item \emph{Excellence in Research Award}, Annual Research Symposium, \hfill 2022.12
-\item \emph{Academic Scholarship}, Tsinghua University \hfill 2022.09
-\awardListEnd
+	\pubListStart
+	
+	\justifying
+	
+	\item \textbf{Angelo Trotta}, Fabrizio Perrone. Tecniche di Steganografia e Analisi Forense delle Immagini Digitali. \textit{University of Molise, Pesche, Italy}, 2024. \url{https://github.com/ShyVortex/image-forensics/releases/download/article-1.0/article.pdf}
+	
+	\pubListEnd
 }
 
 % -------------------- SKILLS --------------------
@@ -235,21 +261,38 @@ Additionally, in collaboration with the other managers, I coordinated task assig
 }{
 \skillListStart
 \justifying
-\item \emph{Languages}: Chinese, English, French.
-\item \emph{Programming}: {\Courier \fontsize{11pt}{11pt}\selectfont Python}, {\Courier \fontsize{11pt}{11pt}\selectfont C++}, {\Courier \fontsize{11pt}{11pt}\selectfont MATLAB}.
+\item \emph{Languages}: Italian, English.
+\item \emph{Programming}:
+{\Courier \fontsize{11pt}{11pt}\selectfont Java},
+{\Courier \fontsize{11pt}{11pt}\selectfont C},
+{\Courier \fontsize{11pt}{11pt}\selectfont C\#},
+{\Courier \fontsize{11pt}{11pt}\selectfont Python},
+{\Courier \fontsize{11pt}{11pt}\selectfont TypeScript},
+{\Courier \fontsize{11pt}{11pt}\selectfont Dart},
+{\Courier \fontsize{11pt}{11pt}\selectfont Rust}.
 \skillListEnd
 }
 
-% -------------------- OTHERS --------------------
-\sectionBlock{
-\section{Academic Services}
-}{
-\skillListStart
-\justifying
-\item \emph{Reviewers for}: \textit{Journal of Operations Research and Optimization},
-\item \phantom{\emph{Reviewers for}:} \textit{International Conference on Optimization and Machine Learning},
-\item \phantom{\emph{Reviewers for}:} \;...
-\skillListEnd
+\setstretch{1.1}
+
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{lcccccc}
+	\toprule
+	& \multicolumn{2}{c}{\textbf{Comprehension}} & \multicolumn{2}{c}{\textbf{Speaking}} & \multicolumn{1}{c}{\textbf{Writing}} \\[3pt]
+	\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+	& \textbf{Listening} & \textbf{Reading} & \textbf{Interaction} & \textbf{Production} \\
+	\midrule
+	\textbf{Italian} & C2 & C2 & C2 & C2 & C2 \\
+	\multicolumn{6}{l}{\textit{Full education carried out in Italy.}} \\[3pt]
+	\textbf{English} & B2 & B2 & B2 & B2 & B2 \\
+	\multicolumn{6}{l}{\href{https://github.com/ShyVortex/angelo-resume/blob/main/Certs/B2Cert.pdf}{\textit{Cambridge English B2 Certification achieved.}}} \\
+	\bottomrule
+\end{tabularx}
+
+\vspace{4pt}
+{\footnotesize
+	Levels: A1/A2: Basic user – B1/B2: Independent user – C1/C2: Proficient user \par
+	\href{http://europass.cedefop.europa.eu/it/resources/european-language-levels-cefr}{Common European Framework of Reference for Languages (CEFR)}
 }
 
 \end{document}

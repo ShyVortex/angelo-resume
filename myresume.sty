@@ -24,6 +24,7 @@
 \usepackage{hyperref}
 \usepackage{xifthen}
 \usepackage{changepage}
+\usepackage{booktabs}
 
 % Font style
 \usepackage{fontspec}
@@ -145,8 +146,7 @@
     \begin{tabular}[t]{p{13.74cm}}
       \textbf{#1} \hfill \\
       \textit{#2} \hfill #3 \vspace{0.75em}
-      \ifthenelse{\isempty{#4}}{}{\\[-2pt]{\textit{#4}}}
-      \ifthenelse{\isempty{#5}}{}{
-      	\parbox[t]{13.74cm}{#5}}
+      \ifthenelse{\isempty{#4}}{}{\\[-2pt]{\textit{#4}}} \vspace{0.5em}
+      \ifthenelse{\isempty{#5}}{}{\\[-2pt]{\textit{#5}}}
     \end{tabular}\vspace{2pt}
 }
