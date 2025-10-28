@@ -13,7 +13,7 @@ Quick start with [Overleaf](https://www.overleaf.com/latex/templates/yuans-resum
 
 ## Preview
 
-![image](https://github.com/ShyVortex/angelo-resume/blob/Preview/preview.png)
+![image](https://github.com/ShyVortex/angelo-resume/blob/main/Preview/preview.png)
 
 ## License
 
