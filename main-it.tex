@@ -1,8 +1,8 @@
 %-------------------------------------
-% Resum in LaTeX (XeLaTeX)
-% Author:  HF Yuan
-% Project: https://github.com/xyz-yuanhf/yuan-resume
-% Base on: https://github.com/mattyHerzig/mattys_resume
+% Resume in LaTeX (LuaLaTeX)
+% Author:  ShyVortex
+% Project: https://github.com/ShyVortex/angelo-resume
+% Based on: https://github.com/Xyz-yuanhf/yuan-resume
 %          http://www.jianxu.net/en/
 % License: MIT
 %------------------------------------
@@ -12,119 +12,374 @@
 
 % --------------------  START  --------------------
 \begin{document}
-
-% -------------------- HEADING --------------------
-\begin{flushright}
-  \setstretch{0.6}
-  \item {\Calluna (+00) 111-2222-3333}  % Phone number
-  \item {\Calluna yuanhf@example.com}  % E-mail address
-  \item {\Calluna http://www.example.com}  % Home page
-\end{flushright}\vspace{-45pt}
-
-\begin{flushleft}  % Rplace here with your name (and identity if required)
-  {\Calluna \fontsize{30pt}{30pt}\selectfont \textsc{Xiao Yuan}} \quad {\Calluna \fontsize{14.5pt}{14.5pt}\selectfont \textsc{Ph.D.}}
-  \noindent\rule{\textwidth}{0.4pt}
-\end{flushleft}
-
-% -------------------- EDUCATION --------------------
-\sectionBlock{
-\section{Education}
-}{
-\eduHeading
-  {Department of Automation, Tsinghua University}{Beijing, China}
-  {Ph.D. in Control Science and Engineering}{2022 - 2028 \footnotesize{\textit{(expected)}}}
-\itemListStart
-  \myItem{Advisor: Prof. Xiao Yuan}
-  \myItem{Research area: Operations Research and Machine Learning}
-\itemListEnd
-
-\eduHeading
-  {Department of Precision Instrument, Tsinghua University}{Beijing, China}
-  {B.E. in Measurement and Control Technology and Instrument}{2018 - 2022}
-\itemListStart
-  \myItem{GPA: 0.00/4.00, Rank: 64/64.}
-\itemListEnd
-
-}
-
-% -------------------- PUBLICATIONS --------------------
-\sectionBlock{
-\section{Publications}
-}{
-\pubListStart
-\justifying
-\item \textbf{Xiao Yuan}, Hua Li. The Future Urban Transportation Systems: Innovations and Challenges. \textit{Journal of Operations Research and Optimization}, 2024.
-\item Hua Li, \textbf{Xiao Yuan}, John Doe. Optimizing Logistics and Supply Chain Networks Using Machine Learning Techniques. \textit{International Conference on Operations Research and Machine Learning}, 2023.
-\item John Doe, \textbf{Xiao Yuan}, Hua Li. Artificial Intelligence in Healthcare: Transforming Diagnostics and Treatment. \textit{International Conference on HealthTech Innovations}, 2023.
-\pubListEnd
-}
-
-% -------------------- PROJECTS --------------------
-\sectionBlock{
-\section{Projects}
-}{
-\projHeading
-{\textbf{Advanced Optimization Techniques for Smart Grid Management}}
-{National Natural Science Foundation of China (NSFC)} {2023.01 - 2024.01}
-
-\projHeading
-{\textbf{Optimizing Urban Traffic Flow Using AI-Based Predictive Models}}
-{Smart Transportation Innovations Grant} {2021.12 - 2022.12}.
-}
-
-% -------------------- INTERNSHIPS --------------------
-\sectionBlock{
-\section{Internships}
-}{
-\internHeading
-  {ABC Tech Ltd.}{Shanghai, China}{2024.01 - 2024.06}
-\itemListStart
-  \myItem{Develop engaging content for social media platforms.}
-  \myItem{Prepare reports and presentations summarizing research findings.}
-\itemListEnd
-\internHeading
-  {XYZ Tech Inc.}{Shanghai, China}{2023.07 - 2023.12}
-\itemListStart
-  \myItem{Develop engaging content for social media platforms.}
-  \myItem{Prepare reports and presentations summarizing research findings.}
-\itemListEnd
-}
-
-% -------------------- AWARDS & HONORS --------------------
-\sectionBlock{
-\section{Awards\\and\\Honors}
-}{
-\awardListStart
-\justifying
-\item \emph{First Prize}, International Data Science Challenge \hfill 2023.11
-\item \emph{Best Innovation Award}, Tech Startup Pitch Competition \hfill 2023.05
-\item \emph{Excellence in Research Award}, Annual Research Symposium, \hfill 2022.12
-\item \emph{Academic Scholarship}, Tsinghua University \hfill 2022.09
-\awardListEnd
-}
-
-% -------------------- SKILLS --------------------
-\sectionBlock{
-\section{Skills}
-}{
-\skillListStart
-\justifying
-\item \emph{Languages}: Chinese, English, French.
-\item \emph{Programming}: {\Courier \fontsize{11pt}{11pt}\selectfont Python}, {\Courier \fontsize{11pt}{11pt}\selectfont C++}, {\Courier \fontsize{11pt}{11pt}\selectfont MATLAB}.
-\skillListEnd
-}
-
-% -------------------- OTHERS --------------------
-\sectionBlock{
-\section{Academic Services}
-}{
-\skillListStart
-\justifying
-\item \emph{Reviewers for}: \textit{Journal of Operations Research and Optimization},
-\item \phantom{\emph{Reviewers for}:} \textit{International Conference on Optimization and Machine Learning},
-\item \phantom{\emph{Reviewers for}:} \;...
-\skillListEnd
-}
-
+	
+	% -------------------- HEADING --------------------
+	\begin{flushright}
+		%\begin{tikzpicture}
+		% cerchio esterno (bordo nero)
+		%\draw[line width=2pt, black] (0,0) circle (1.50cm); 
+		
+		% cerchio interno con foto
+		%\clip (0,0) circle (1.5cm);
+		%\node at (0,0) {\includegraphics[width=3cm]{Figs/pic.jpg}};
+		%\end{tikzpicture}
+	\end{flushright}\vspace{-45pt}
+	
+	\begin{flushleft}  % Rplace here with your name (and identity if required)
+		{\Calluna \fontsize{27pt}{27pt}\selectfont \textsc{Angelo Trotta}}
+		\quad {\Calluna \fontsize{14.5pt}{14.5pt}\selectfont
+			\hfill \textsc{Curriculum Vitae}}
+		\hspace{0.2cm} \fontsize{10pt}{10pt}{(Ottobre 2025)}
+		\noindent\rule{\textwidth}{0.4pt}
+	\end{flushleft}
+	
+	% -------------------- BIO --------------------
+	\sectionBlock{
+		\section{Bio}
+	}{
+		\Calluna Laureato in Informatica, appassionato dell’utilizzo della tecnologia per migliorare la vita delle persone. %I’m particularly interested in the intersection of computer science and healthcare, where data-driven innovation and intelligent systems can make a real difference in patient outcomes and medical research.
+		\\ Curioso, motivato e attento ai dettagli, amo esplorare nuove tecnologie e sviluppare soluzioni pratiche che avvicinano le persone al mondo digitale.
+	}
+	
+	% -------------------- CONTACTS --------------------
+	\sectionBlock{
+		\section{Informazioni di Contatto}
+	}{
+		Residenza Universitaria
+		\newline Dipartimento di Bioscienze e Territorio
+		\newline Università degli Studi del Molise
+		\newline Contrada Fonte Lappone
+		\newline 86090 - Pesche (IS), Italia
+		
+		\setstretch{0.6}
+		\skillListStart
+		\item \textit{Cellulare: } {\Calluna (+39) 392 775 0987}
+		\item \textit{E-mail: } {\url{angelotr@ik.me}}
+		\item \textit{PEC: } {\url{a.trotta@spidmail.it}}
+		\item \textit{GitHub: } {\url{https://github.com/ShyVortex}}
+		\skillListEnd
+	}
+	
+	% -------------------- PERSONAL --------------------
+	\sectionBlock{
+		\section{Personale}
+	}{
+		\setstretch{0.6}
+		\skillListStart
+		\item \textit{Genere: } {Maschio}\vspace{0.25em}
+		\item \textit{Data di nascita: } {05/10/2002}\vspace{0.25em}
+		\item \textit{Cittadinanza: } {Italiana}
+		\skillListEnd
+	}
+	
+	% ---------------- PROFESSIONAL EXPERIENCE ----------------
+	\sectionBlock{
+		\section{Esperienza Professionale}
+	}{
+		\internHeading
+		{Artista 3D}
+		{Libero professionista}{Italia, Remoto}{10/2019 - 12/2022}
+		{Responsabile della progettazione creativa e della realizzazione di scene e modelli 3D, combinando visione artistica con competenza tecnica per produrre assets di alta qualità.} \vspace{0.15em}
+		\itemListStart
+		\myItem{Progettazione e creazione di spazi e modelli 3D.}
+		\myItem{Collaborazione a stretto contatto con fotografi e artisti per raggiungere \\ risultati visivi ottimali.}
+		\myItem{Sviluppo professionale progressivo nella modellazione 3D e nell'efficienza di utilizzo dei corrispettivi software.}
+		\myItem{Esperienza maturata nell'utilizzo di software per modellazione 3D e animazione all'avanguardia, come Blender (1000+ ore) e Unreal Engine.}
+		\itemListEnd \vspace{0.5em}
+		
+		\internHeading
+		{Recensore Tirocinante}
+		{Devils In The Detail}{Italia, Remoto}{01/2021 - 01/2022}
+		{Ho imparato a scrivere recensioni semi-professionali in ambito di videogiochi al fine di informare un eventuale
+		acquirente sulle potenzialità, i punti di forza e i punti deboli di ogni videogioco da me recensito.} \vspace{0.15em}
+		\itemListStart
+		\myItem{Migliorata e approfondita la conoscenza della lingua inglese.}
+		\myItem{Pubblicate recensioni di qualità con l'obiettivo di avere sempre una valutazione critica e oggettiva.}
+		\myItem{\textbf{Pagina ufficiale curatore:} \url{https://store.steampowered.com/curator/37072886-Devils-in-the-Detail/}}\\
+		\myItem{\textbf{Pagina curatore personale:}
+			\url{https://store.steampowered.com/curator/40199055/}}
+		\itemListEnd \vspace{0.5em}
+		
+		\internHeading
+		{QA Tester}
+		{Groove Studio}{Italia, Remoto}{07/2020 - 12/2020}
+		{Contribuito al controllo qualità del gioco indie horror in prima persona LOCIS, pubblicato su Steam.} \vspace{0.15em}
+		\itemListStart
+		\myItem{Ho condotto sessioni di playtesting sistematiche per identificare difetti e problemi con il gameplay.}
+		\myItem{Analizzata e valutata la qualità del software per garantire al giocatore un'esperienza fluida e senza intoppi.}
+		\myItem{Partecipazione effettiva alla risoluzione di problematiche in team, collaborando anche con gli sviluppatori.}
+		\myItem{Ricercate e proposte soluzioni a sfide tecniche e strutturali incontrate durante il testing.}
+		\itemListEnd \vspace{0.5em}
+		
+		\internHeading
+		{Content Creator}
+		{Maker Studios}{Italia, Remoto}{02/2015 - 02/2018}
+		{Gestito un canale YouTube basato sul gaming un tempo attivo con oltre 300 iscritti e diverse migliaia di visualizzazioni. Ho collaborato con una rete di terze parti che garantiva introiti tramite l'integrazione di pubblicità.} \vspace{0.15em}
+		\itemListStart
+		\myItem{Responsabile della progettazione creativa di video informativi o di intrattenimento.}
+		\myItem{Esperienza nell'uso dei principali software di editing video, tra cui Camtasia Studio e DaVinci Resolve}
+		\myItem{Implementazione di nuovi processi lavorativi con conseguente risparmio economico, riduzione dello spreco di
+		risorse e ottimizzazione del flusso di lavoro}
+		\myItem{Collaborazione diretta con colleghi video maker per realizzare contenuti coinvolgenti e coesi.}
+		\itemListEnd
+	}
+	
+	% -------------------- EDUCATION --------------------
+	\sectionBlock{
+		\section{Istruzione e Formazione}
+	}{
+		\eduHeading
+		{\large Laurea Magistrale - Sicurezza dei Sistemi Software}{2026 (previsto)}
+		{Università degli Studi del Molise, Pesche (IS)}{} \vspace{0.25em}
+		\nbItListStart \myItem{Esami sostenuti finora:} \itemListEnd
+		\itemListStart
+		\myItem{Advanced English}
+		\myItem{Biometric Systems}
+		\myItem{Computer Forensics and Investigations}
+		\myItem{Security Governance}
+		\myItem{Informatics and Law}
+		\myItem{Computational Statistics and Machine Learning}
+		\myItem{Software Project Management}
+		\myItem{Software Security and Program Analysis}
+		\itemListEnd
+		\vspace{0.5em}
+		
+		\eduHeading
+		{\large Laurea Triennale - Informatica}{24 Ottobre 2024}
+		{Università degli Studi del Molise, Pesche (IS)}{} \vspace{0.25em}
+		\nbItListStart
+		\myItem{Titolo tesi: \href{https://github.com/ShyVortex/analyzer-paper/blob/main/Paper/thesis\_final.pdf}{\textit{A Fine-Grained Analysis of Comments Quality in Code-Related Datasets}}}
+		\myItem{Area di ricerca: Automated Software Delivery}
+		\myItem{Relatore: Prof. Simone Scalabrino}
+		\myItem{Voto finale: 108/110}
+		\itemListEnd
+		\nbItListStart \myItem{Esami sostenuti:} \itemListEnd
+		\itemListStart
+		\myItem{Logica e fondamenti di Informatica}
+		\myItem{Architettura degli elaboratori}
+		\myItem{Programmazione I}
+		\myItem{Sistemi Operativi}
+		\myItem{Calcolo delle probabiilità e statistica}
+		\myItem{Lingua inglese}
+		\myItem{Programmazione II}
+		\myItem{Matematica I}
+		\myItem{Introduction to Machine Learning}
+		\myItem{Informatica giuridica}
+		\myItem{Algoritmi e strutture dati}
+		\myItem{Basi di dati e sistemi informativi}
+		\myItem{Fisica}
+		\myItem{Calcolo numerico}
+		\myItem{Matematica II}
+		\myItem{Reti di calcolatori}
+		\myItem{Ricerca operativa}
+		\myItem{Automated Software Delivery}
+		\myItem{Intelligenza Artificiale}
+		\myItem{Hands on Unity}
+		\myItem{Programmazione mobile}
+		\itemListEnd \vspace{0.5em}
+		
+		\eduHeading
+		{\large Diploma Superiore}{30 Luglio 2021}
+		{Liceo Scientifico "Bonghi-Rosmini", Lucera (FG)}{} \vspace{0.25em}
+		\nbItListStart \myItem{Materie principali trattate:} \itemListEnd
+		\itemListStart
+		\myItem{Matematica}
+		\myItem{Fisica}
+		\myItem{Biologia}
+		\myItem{Chimica}
+		\itemListEnd
+	}
+	
+	% -------------------- PROJECTS --------------------
+	\sectionBlock{
+		\section{Esperienze Accademiche}
+	}{
+		\projHeading
+		{\fontsize{13pt}{13pt}\textbf{UniMove - Car Sharing per Studenti Universitari}}
+		{Università degli Studi del Molise, Pesche (IS)} {03/2025 - 09/2025}
+		{In questo progetto, ho assunto il ruolo di \textbf{Lead Software Manager}.
+			Ho tenuto sessioni di allenamento per gli studenti dell'anno accademico precedente che erano responsabili di sviluppare l'applicazione mobile. I corsi coprivano i fondamentali delle operazioni CRUD, PostgreSQL, Java Spring per lo sviluppo backend, testing API con Postman, e il framework Ionic per lo sviluppo frontend.
+			Inoltre, insieme agli altri manager, ho coordinato l'assegnazione delle task seguendo la metodologia Agile, monitorando costantemente il progresso del team, e fornendo feedback strutturale durante tutte le fasi di sviluppo per garantire un flusso di lavoro ottimizzato ed efficiente.}
+		{}
+		
+		\projHeading
+		{\fontsize{13pt}{13pt}\textbf{GameTracker - Library Manager}}
+		{Università degli Studi del Molise, Pesche (IS)} {05/2024 - 07/2024}
+		{Un'applicazione mobile (Android e iOS) sviluppata con Flutter per permettere agli utenti di tracciare i propri video giochi su molteplici piattaforme.}
+		{Link al progetto: \url{https://github.com/ShyVortex/game-tracker}}
+		\itemListStart
+		\myItem{Permette agli utenti di registrare la propria libreria videoludica (piattaforma, tempo di gioco, data di completamento, momenti salienti) e gestire lista dei desideri, preferiti e titoli completati.}
+		\myItem{Implementati creazione account utente e sincronizzazione con un backend remoto per preservare i dati utenti su più dispositivi.}
+		\myItem{Integrata funzionalità di geolocalizzazione tramite Capacitor e OpenStreetMap per indicare dove un gioco è stato completato (luogo fisico).}
+		\myItem{Costruito un menù impostazioni che include il theme switching (modalità chiara/scura) e la personalizzazione del profilo.}
+		\myItem{Coordinato lo sviluppo sia del frontend (Flutter) che le API del backend per garantire un'esperienza responsiva su tutte le tipologie di dispositivi mobile.}
+		\itemListEnd
+		\vspace{0.65em}
+		
+		\projHeading
+		{\fontsize{13pt}{13pt}\textbf{PlusOne - Comunicazione Sanitaria Semplice}}
+		{Università degli Studi del Molise, Pesche (IS)} {04/2024 - 06/2024}
+		{Ho contribuito allo sviluppo di un'applicazione mobile cross-platform utilizzando il framework Ionic per potenziare la comunicazione tra professionisti sanitari negli ospedali e nei pronto soccorso. L'app linearizza le interazioni tra dottori, pazienti e infermieri, facilitando uno scambio d'informazioni efficiente e migliorando la coordinazione.}
+		{Link al progetto: \url{https://github.com/ShyVortex/plusone-ionic}}\vspace{0.65em}
+		
+		\projHeading
+		{\fontsize{13pt}{13pt}\textbf{Diffusion Tool - AI Image Generator and Upscaler}}
+		{Università degli Studi del Molise, Pesche (IS)} {12/2023 - 04/2024}
+		{Applicazione desktop JavaFX che integra un backend in Python collegato con le pipeline di Stable Diffusion, modelli BSRGAN, e algoritmi di upscaling personalizzati. Progettato per un utilizzo offline, lo strumento offre la generazione di immagini e un upscaling di alta qualità, tutto mantenendo i dati utente in locale.}
+		{Link al progetto: \url{https://github.com/ShyVortex/diffusion-tool}}
+		\itemListStart
+		\myItem{Strutturata l'interfaccia grafica con JavaFX e gestita l'integrazione con Python per i flussi di lavoro con IA.}
+		\myItem{Implementati i flussi di autenticazione per l'utente (Login / Sign Up) e gestita la navigazione ai moduli Home, Profile, Generate, e Upscale.}
+		\myItem{Definiti i requisiti di sistema e la gestione delle dipendenze (OpenJDK 17+, Maven, Python + ambiente virtuale)}
+		\myItem{Impacchettato il progetto come file .jar eseguibile con build automatizzata (Maven) per una facile distribuzione.}
+		\itemListEnd
+		\vspace{0.65em}
+		
+		\projHeading
+		{\fontsize{13pt}{13pt}\textbf{Simplified Monopoly}}
+		{Università degli Studi del Molise, Pesche (IS)} {08/2022 - 10/2023}
+		{Applicazione Java che converte una versione CLI di Monopoly in una con interfaccia grafica utilizzando Swing / GUI Designer, senza alterare la logica di gioco.}
+		{Link al progetto: \url{https://github.com/ShyVortex/simplified-monopoly}}
+		\itemListStart
+		\myItem{Progettata e implementata l'interfaccia utente tramite GUI Designer e JFormDesigner, inclusi il layout, i controlli, e le finestre di gioco.}
+		\myItem{Gestita la build del progetto e la distribuzione con Maven e JDK 17.}
+		\myItem{Ho imparato i principi di programmazione OOP in maniera intensiva, rifinendo la struttura del codice, e migliorando i design pattern per una manutenibilità futura.}
+		\itemListEnd
+	}
+	
+	% -------------------- CERTIFICATIONS --------------------
+	\sectionBlock{
+		\section{Certificazioni}
+	}{
+		\eduHeading
+		{\large \href{https://github.com/ShyVortex/angelo-resume/blob/main/Certs/B2Cert.pdf}{First Certificate in English} (CEFR Level B2)}{10 Maggio 2025}
+		{Cambridge English}{} \vspace{0.25em}
+		\nbItListStart
+		\myItem{Grado: B}
+		\myItem{Punteggio Complessivo: 179}
+		\myItem{Centro di riferimento: IT955 0125}
+		\myItem{ID di Verifica: D1233928}
+		\myItem{ID di Accreditazione: 500/2705/0}
+		\itemListEnd
+		\vspace{0.65em}
+		
+		\eduHeading
+		{\large Getting Started with Rust (LFEL1002)}{14 Dicembre 2024}
+		{The Linux Foundation}{} \vspace{0.25em}
+		\nbItListStart
+		\myItem{ID Certificazione: LF-4evagqbkz5}
+		\myItem{Link di verifica: \href{https://www.credly.com/badges/a24c6224-59d0-4555-8885-e2d83ee7ddd8/public\_url}{Credly}}
+		\itemListEnd
+		\vspace{0.65em}
+		
+		\eduHeading
+		{\large \href{https://github.com/ShyVortex/angelo-resume/blob/main/Certs/EIPASS.pdf}{EIPASS 7 Moduli User}}{27 Febbraio 2020}
+		{Certipass}{} \vspace{0.25em}
+		\nbItListStart
+		\myItem{Livello: Intermedio}
+		\myItem{Codice Utente: EIC00376111AA}
+		\myItem{ID di Verifica: WRAQPNYT5L}
+		\itemListEnd
+	}
+	
+	% -------------------- ARTICLES --------------------
+	\sectionBlock{
+		\section{Articoli}
+	}{
+		\pubListStart
+		
+		\justifying
+		
+		\item \textbf{Angelo Trotta}, Fabrizio Perrone. Tecniche di Steganografia e Analisi Forense delle Immagini Digitali. \textit{University of Molise, Pesche, Italy}, 2024. \url{https://github.com/ShyVortex/image-forensics/releases/download/article-1.0/article.pdf}
+		
+		\pubListEnd
+	}
+	
+	% -------------------- SKILLS --------------------
+	\sectionBlock{
+		\section{Competenze Personali}
+	}{
+		\skillListStart
+		\justifying
+		\item \emph{Lingue parlate}: Italiano, Inglese.
+		\item \emph{Linguaggi di programmazione}:
+		{\Courier \fontsize{11pt}{11pt}\selectfont Java},
+		{\Courier \fontsize{11pt}{11pt}\selectfont C},
+		{\Courier \fontsize{11pt}{11pt}\selectfont C\#},
+		{\Courier \fontsize{11pt}{11pt}\selectfont Python},
+		{\Courier \fontsize{11pt}{11pt}\selectfont TypeScript},
+		{\Courier \fontsize{11pt}{11pt}\selectfont Dart},
+		{\Courier \fontsize{11pt}{11pt}\selectfont Rust},
+		{\Courier \fontsize{11pt}{11pt}\selectfont HTML \& CSS}.
+		\skillListEnd
+	}\vspace{4pt}
+	
+	\setstretch{1.1}
+	
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabularx}{\textwidth}{lcccccc}
+		\multicolumn{6}{l}{\textbf{{Competenze Linguistiche}}} \\[4pt]
+		\toprule
+		& \multicolumn{2}{c}{\CronosSbd{COMPRENSIONE}} & \multicolumn{2}{c}{\CronosSbd{PARLATO}} & \multicolumn{1}{c}{\CronosSbd{PRODUZIONE SCRITTA}} \\[3pt]
+		\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+		& \textbf{Ascolto} & \textbf{Lettura} & \textbf{Interazione} & \textbf{Produzione orale} \\
+		\midrule
+		\textbf{Italiano} & C2 & C2 & C2 & C2 & C2 \\
+		\multicolumn{6}{l}{\textit{Percorso educativo effettuato in Italia.}} \\[3pt]
+		\textbf{Inglese} & B2 & B2 & B2 & B2 & B2 \\
+		\multicolumn{6}{l}{\textit{Ottenuta la certificazione Cambridge English.}} \\
+		\bottomrule
+	\end{tabularx}
+	
+	\vspace{4pt}
+	{\footnotesize
+		Livelli: A1/A2: Utente base – B1/B2: Utente intermedio – C1/C2: Utente avanzato \par
+		\href{https://europass.europa.eu/it/common-european-framework-reference-language-skills}{Quadro Comune Europeo di Riferimento delle Lingue}
+	}\vspace{4pt}
+	
+	\begin{table}[h!]
+		\centering
+		\renewcommand\arraystretch{1.5}
+		\renewcommand\tabularxcolumn[1]{>{\centering\arraybackslash}m{#1}}
+		\setlength{\tabcolsep}{6pt}
+		\begin{tabularx}{\textwidth}{l*{5}{X}}
+			\multicolumn{6}{l}{\textbf{{Competenze Digitali}}} \\[4pt]
+			\toprule
+			& \multicolumn{5}{c}{\textbf{{AUTOVALUTAZIONE}}} \\
+			\hdashline
+			& {\textbf{Elaborazione delle informazioni}}
+			& {\textbf{Comunicazione}}
+			& {\textbf{Creazione di contenuti}}
+			& {\textbf{Sicurezza}}
+			& {\textbf{Risoluzione di problemi}} \\
+			\midrule
+			\textbf{Pacchetto Office} & Utente Avanzato & Utente Avanzato & Utente Avanzato & Utente Avanzato & Utente Avanzato \\
+			\textbf{Editing foto \& video} & Utente Avanzato & Utente Avanzato & Utente Avanzato & Utente Avanzato & Utente Avanzato \\
+			\bottomrule
+		\end{tabularx}
+		
+		\vspace{4pt}
+		{\footnotesize
+			{Livelli: Utente base – Utente intermedio – Utente avanzato} \par
+			\href{https://www.cittadinanzadigitale.eu/wp-content/uploads/2015/10/Competenze-digitali.pdf}{Competenze digitali - Scheda per l'autovalutazione}
+		}
+	\end{table}
+	
+	\skillListStart
+	\justifying
+	\item \emph{Altre competenze}: Tecnico hardware ed entusiasta di modding PC
+	\item \emph{Patente di guida}: B
+	\skillListEnd
+	
+	\vspace{1cm}
+	
+	
+	\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X >{\centering\arraybackslash}X}
+		{\textbf{Data}} &
+		{\textbf{Firma}} \\[0.3cm]
+		\rule{4cm}{0.3pt} & \rule{4cm}{0.3pt} \\[-0.1cm]
+	\end{tabularx}
+	
 \end{document}
 

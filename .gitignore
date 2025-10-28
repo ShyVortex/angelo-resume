@@ -1,6 +1,7 @@
 # Output PDF
 *.pdf
 !Certs/*.pdf
+!Build/*.pdf
 *.dvi
 *.ps
 
