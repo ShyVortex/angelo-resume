@@ -1,19 +1,19 @@
-## Yuan's Resume
+## Angelo's Resume
 
-An elegant academic resume template, compiled with XeLaTeX. This project is a reproduction of  [Jian Xu's CV](http://www.jianxu.net/en/files/JianXu_CV.pdf), and refers to the code of [Matty's Resume](https://github.com/mattyHerzig/mattys_resume).
+An elegant academic resume, compiled with LuaLaTeX. This project is inspired by [Gennaro Parlato's CV](https://gennaro-parlato.github.io/paper/gennaroparlato-cv-en.pdf) and it's based on [Haofeng Yuan's CV](https://github.com/Xyz-yuanhf/yuan-resume), while referring to the code of [Matty's Resume](https://github.com/mattyHerzig/mattys_resume).
 
 ## Usage
 
-Quick start with [Overleaf](https://www.overleaf.com/latex/templates/yuans-resume-template/hzkxnqxyfgnr) for online edit and compilation, or compile on your own computer.
+Quick start with [Overleaf](https://www.overleaf.com/latex/templates/yuans-resume-template/hzkxnqxyfgnr) for online edit and compilation, or compile on your own computer, using [TeXStudio](https://texstudio.org/).
 
-**Note:** 
+**Note:**
 
-- Please compile using **XeLaTeX** (pdfLaTeX cannot import the fonts correctly).
-- The fonts are included in this project package, and please follow their copyright.
+- Please compile using **LuaLaTeX** (pdfLaTeX cannot import the fonts correctly).
+- The fonts are included in this project package, so please follow their copyright.
 
 ## Preview
 
-![image](https://github.com/Xyz-yuanhf/yuan-resume/blob/4015c4eb0d0e692bda9ce81e96fc8a63e8b66e57/Preview/preview.png)
+![image](https://github.com/ShyVortex/angelo-resume/blob/Preview/preview.png)
 
 ## License
 
