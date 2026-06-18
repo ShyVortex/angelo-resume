@@ -29,7 +29,10 @@
 *.swp
 *.tmp
 
+# Build in project root
+main-it.pdf
+main-en.pdf
+
 # Latexmk and other build directories
 _build/
 latexmkrc
-Preview/
