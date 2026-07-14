@@ -30,7 +30,7 @@ toolbox create -c tex-env && toolbox run -c tex-env sudo dnf install texlive-sch
 **If you use Distrobox (universal alternative):**
 
 ```bash
-distrobox create -n tex-env -i fedora:latest && distrobox enter tex-env -- sudo dnf install texlive-scheme-medium texlive-xifthen texlive-fontspec texlive-titlesec texlive-enumitem texlive-tabularx texlive-ragged2e texlive-changepage texlive-booktabs texlive-arydshln -y
+distrobox create -n tex-env -i fedora:latest && distrobox enter tex-env -- sudo dnf install texlive-scheme-medium texlive-xifthen texlive-fontspec texlive-titlesec texlive-enumitem texlive-ragged2e texlive-changepage texlive-booktabs texlive-arydshln -y
 ```
 
 ### Flatpak Permissions
@@ -55,15 +55,25 @@ To make the editor seamlessly use the isolated environment you just created:
 
 **For Toolbox:**
 
-* **PdfLaTeX:** `flatpak-spawn --host toolbox run -c tex-env pdflatex -synctex=1 -interaction=nonstopmode %.tex`
-* **LuaLaTeX:** `flatpak-spawn --host toolbox run -c tex-env lualatex -synctex=1 -interaction=nonstopmode %.tex`
-* **XeLaTeX:** `flatpak-spawn --host toolbox run -c tex-env xelatex -synctex=1 -interaction=nonstopmode %.tex`
+* **If TeXstudio is installed via Flatpak:**
+  * **PdfLaTeX:** `flatpak-spawn --host toolbox run -c tex-env pdflatex -synctex=1 -interaction=nonstopmode %.tex`
+  * **LuaLaTeX:** `flatpak-spawn --host toolbox run -c tex-env lualatex -synctex=1 -interaction=nonstopmode %.tex`
+  * **XeLaTeX:** `flatpak-spawn --host toolbox run -c tex-env xelatex -synctex=1 -interaction=nonstopmode %.tex`
+* **If TeXstudio is installed natively (e.g., via pacman, dnf, apt):**
+  * **PdfLaTeX:** `toolbox run -c tex-env pdflatex -synctex=1 -interaction=nonstopmode %.tex`
+  * **LuaLaTeX:** `toolbox run -c tex-env lualatex -synctex=1 -interaction=nonstopmode %.tex`
+  * **XeLaTeX:** `toolbox run -c tex-env xelatex -synctex=1 -interaction=nonstopmode %.tex`
 
 **For Distrobox:**
 
-* **PdfLaTeX:** `flatpak-spawn --host distrobox enter tex-env -- pdflatex -synctex=1 -interaction=nonstopmode %.tex`
-* **LuaLaTeX:** `flatpak-spawn --host distrobox enter tex-env -- lualatex -synctex=1 -interaction=nonstopmode %.tex`
-* **XeLaTeX:** `flatpak-spawn --host distrobox enter tex-env -- xelatex -synctex=1 -interaction=nonstopmode %.tex`
+* **If TeXstudio is installed via Flatpak:**
+  * **PdfLaTeX:** `flatpak-spawn --host distrobox enter tex-env -- pdflatex -synctex=1 -interaction=nonstopmode %.tex`
+  * **LuaLaTeX:** `flatpak-spawn --host distrobox enter tex-env -- lualatex -synctex=1 -interaction=nonstopmode %.tex`
+  * **XeLaTeX:** `flatpak-spawn --host distrobox enter tex-env -- xelatex -synctex=1 -interaction=nonstopmode %.tex`
+* **If TeXstudio is installed natively (e.g., via pacman, dnf, apt):**
+  * **PdfLaTeX:** `distrobox enter tex-env -- pdflatex -synctex=1 -interaction=nonstopmode %.tex`
+  * **LuaLaTeX:** `distrobox enter tex-env -- lualatex -synctex=1 -interaction=nonstopmode %.tex`
+  * **XeLaTeX:** `distrobox enter tex-env -- xelatex -synctex=1 -interaction=nonstopmode %.tex`
 
 ### Compilation
 
