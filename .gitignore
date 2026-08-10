@@ -36,3 +36,6 @@ main-en.pdf
 # Latexmk and other build directories
 _build/
 latexmkrc
+
+# macOS related
+.DS_Store
