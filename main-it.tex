@@ -410,7 +410,8 @@
 	
 	\centering
 	\renewcommand{\arraystretch}{1.3}
-	\begin{tabularx}{\textwidth}{lcccccc}
+	\renewcommand\tabularxcolumn[1]{>{\centering\arraybackslash}m{#1}}
+	\begin{tabularx}{\textwidth}{l*{5}{X}}
 		\multicolumn{6}{l}{\textbf{{Competenze Linguistiche}}} \\[4pt]
 		\toprule
 		& \multicolumn{2}{c}{\CronosSbd{COMPRENSIONE}} & \multicolumn{2}{c}{\CronosSbd{PARLATO}} & \multicolumn{1}{c}{\CronosSbd{PRODUZIONE SCRITTA}} \\[3pt]
@@ -439,7 +440,7 @@
 			\multicolumn{6}{l}{\textbf{{Competenze Digitali}}} \\[4pt]
 			\toprule
 			& \multicolumn{5}{c}{\textbf{{AUTOVALUTAZIONE}}} \\
-			\hdashline
+			\cmidrule(lr){2-6}
 			& {\textbf{Elaborazione delle informazioni}}
 			& {\textbf{Comunicazione}}
 			& {\textbf{Creazione di contenuti}}
@@ -463,8 +464,6 @@
 	\item \emph{Altre competenze}: Tecnico hardware ed entusiasta di modding PC
 	\item \emph{Patente di guida}: B
 	\skillListEnd
-	
-	\vspace{1cm}
 	
 	\flushleft{"Autorizzo il trattamento dei miei dati personali presenti nel curriculum vitae ai sensi del Regolamento UE 2016/679 (GDPR)."}
 	
