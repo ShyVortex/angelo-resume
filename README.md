@@ -123,7 +123,7 @@ and generate the PDF completely automatically.
 
 ## Preview
 
-![image](https://github.com/ShyVortex/angelo-resume/blob/main/Preview/preview.png)
+<img width="2481" height="3508" alt="preview" src="https://github.com/user-attachments/assets/cab4c545-71e0-4b73-b2b3-9f7c4c45253e" />
 
 ## License
 
